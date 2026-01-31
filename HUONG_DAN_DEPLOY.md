@@ -215,4 +215,40 @@ Truy cập: `http://localhost:5000/swagger`
 
 **Sinh viên**: Đỗ Văn Tuyên  
 **MSSV**: xxxxx734  
-**Ngày**: 31/01/2026
+
+---
+
+## 🎬 KỊCH BẢN QUAY VIDEO DEMO (TỐI ƯU 3 PHÚT)
+
+Để đảm bảo ngắn gọn, súc tích và đầy đủ minh chứng.
+
+### 1. Giới thiệu (0:00 - 0:30)
+- **Màn hình**: Mở sẵn file `README.md` trên GitHub.
+- **Lời thoại**: 
+  > "Chào thầy, em là Đỗ Văn Tuyên, MSSV ... xin demo bài thực hành. Đây là Repository chứa source code Backend, Flutter App và đầy đủ hướng dẫn deploy."
+- **Thao tác**: Cuộn nhanh qua file README, chỉ vào các bảng link Web/Backend đã deploy.
+
+### 2. Demo Web App & Backend (0:30 - 2:00)
+- **Màn hình**: Tab Flutter Web (Vercel).
+- **Lời thoại**: 
+  > "Hệ thống đã được deploy public. Frontend chạy trên Vercel, kết nối với Backend trên Render.com."
+- **Thao tác**: 
+  - Đăng nhập (Admin).
+  - Show **Dashboard** (Biểu đồ load được -> chứng tỏ API chạy).
+  - Show tab **Wallet/Members** (Dữ liệu thật).
+  - *Mẹo*: Mở F12 (Tab Network), reload trang để thấy request gọi tới `onrender.com`.
+
+### 3. Demo Docker & Swagger (2:00 - 2:30)
+- **Màn hình**: Tab Docker Hub & Swagger.
+- **Lời thoại**: 
+  > "Backend được đóng gói thành Docker Image đẩy lên Docker Hub, bất kỳ ai cũng có thể pull về chạy."
+- **Thao tác**: 
+  - Click tab **Docker Hub** (show tag `v1`).
+  - Click tab **Swagger**, test nhanh API `HealthCheck` hoặc `GetProfile`.
+
+### 4. Tổng kết (2:30 - 3:00)
+- **Màn hình**: Folder chứa file APK trên máy tính.
+- **Lời thoại**: 
+  > "Ngoài ra em cũng đã build xong APK cho Android. Em xin kết thúc phần trình bày."
+- **Thao tác**: Show file `app-release.apk`.
+
