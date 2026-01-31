@@ -15,8 +15,10 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
-# Expose port
+# Expose port and force override URLs
 EXPOSE 8080
-ENV ASPNETCORE_URLS=http://+:8080
+ENV ASPNETCORE_URLS=http://0.0.0.0:8080
+ENV ASPNETCORE_ENVIRONMENT=Production
 
-ENTRYPOINT ["dotnet", "PcmBackend.dll"]
+# Override the hardcoded URLs in Program.cs
+ENTRYPOINT ["dotnet", "PcmBackend.dll", "--urls", "http://0.0.0.0:8080"]
