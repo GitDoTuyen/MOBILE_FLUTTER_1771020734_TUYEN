@@ -91,6 +91,8 @@ class _LoginScreenState extends State<LoginScreen>
                   _buildForm(),
                   const SizedBox(height: 24),
                   _buildToggleButton(),
+                  const SizedBox(height: 24),
+                  _buildDemoAccounts(),
                 ],
               ),
             ),
@@ -274,6 +276,108 @@ class _LoginScreenState extends State<LoginScreen>
           ),
         ),
       ],
+    );
+  }
+
+  Widget _buildDemoAccounts() {
+    return GlassCard(
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(
+                Icons.info_outline,
+                color: ThemeProvider.primaryColor,
+                size: 20,
+              ),
+              const SizedBox(width: 8),
+              const Text(
+                'Tài khoản Demo',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          _buildAccountTile(
+            'Admin',
+            'admin@pcm.com',
+            'Admin@123',
+            Icons.admin_panel_settings,
+            Colors.purple,
+          ),
+          const SizedBox(height: 8),
+          _buildAccountTile(
+            'Thành viên',
+            'member1@pcm.com',
+            'Member@123',
+            Icons.person,
+            Colors.blue,
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildAccountTile(
+    String role,
+    String email,
+    String password,
+    IconData icon,
+    Color color,
+  ) {
+    return InkWell(
+      onTap: () {
+        setState(() {
+          _emailController.text = email;
+          _passwordController.text = password;
+          _isLogin = true;
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Đã điền tài khoản $role'),
+            backgroundColor: color,
+            duration: const Duration(seconds: 1),
+          ),
+        );
+      },
+      borderRadius: BorderRadius.circular(8),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+        decoration: BoxDecoration(
+          color: color.withOpacity(0.1),
+          borderRadius: BorderRadius.circular(8),
+          border: Border.all(color: color.withOpacity(0.3)),
+        ),
+        child: Row(
+          children: [
+            Icon(icon, color: color, size: 24),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    role,
+                    style: TextStyle(fontWeight: FontWeight.bold, color: color),
+                  ),
+                  Text(
+                    '$email / $password',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Theme.of(
+                        context,
+                      ).colorScheme.onSurface.withOpacity(0.7),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Icon(Icons.touch_app, color: color.withOpacity(0.5), size: 20),
+          ],
+        ),
+      ),
     );
   }
 }

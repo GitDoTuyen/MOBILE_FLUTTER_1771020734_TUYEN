@@ -160,7 +160,8 @@ class TournamentProvider extends ChangeNotifier {
 
   Future<void> loadTournaments({TournamentStatus? status}) async {
     _isLoading = true;
-    notifyListeners();
+    // Use Future.microtask to avoid calling notifyListeners during build
+    Future.microtask(() => notifyListeners());
 
     try {
       final response = await apiService.getTournaments(status: status?.index);
@@ -171,7 +172,7 @@ class TournamentProvider extends ChangeNotifier {
     }
 
     _isLoading = false;
-    notifyListeners();
+    Future.microtask(() => notifyListeners());
   }
 
   Future<void> loadTournamentDetail(int id) async {

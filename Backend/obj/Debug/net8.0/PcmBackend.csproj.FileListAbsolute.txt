@@ -96,11 +96,6 @@ d:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\PcmBackend.MvcApplicati
 d:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\PcmBackend.MvcApplicationPartsAssemblyInfo.cache
 d:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\staticwebassets.build.json
 d:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\staticwebassets.development.json
-d:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\staticwebassets\msbuild.PcmBackend.Microsoft.AspNetCore.StaticWebAssets.props
-d:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\staticwebassets\msbuild.build.PcmBackend.props
-d:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.PcmBackend.props
-d:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.PcmBackend.props
-d:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\staticwebassets.pack.json
 d:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\scopedcss\bundle\PcmBackend.styles.css
 d:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\PcmBackend.csproj.Up2Date
 d:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\PcmBackend.dll
@@ -133,3 +128,12 @@ d:\Mobile\bai_kiem_tra_nang_cao\Backend\bin\Debug\net8.0\runtimes\win-arm\native
 d:\Mobile\bai_kiem_tra_nang_cao\Backend\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 d:\Mobile\bai_kiem_tra_nang_cao\Backend\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 d:\Mobile\bai_kiem_tra_nang_cao\Backend\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\Mobile\bai_kiem_tra_nang_cao\Backend\bin\Debug\net8.0\PcmBackend.staticwebassets.endpoints.json
+D:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\PcmBackend.sourcelink.json
+D:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Mobile\bai_kiem_tra_nang_cao\Backend\obj\Debug\net8.0\swae.build.ex.cache
